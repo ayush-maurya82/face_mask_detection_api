@@ -216,7 +216,7 @@
             console.log(message);
             console.log(10 + 6);
             // http://127.0.0.1:5000/predict
-            $.post("https://bddd152eb598.ngrok.io/pred", JSON.stringify(message), function (response) {
+            $.post("https://676d0abd5ce0.ngrok.io/pred", JSON.stringify(message), function (response) {
                 $("#withmask-prediction").text(response.prediction.withMask.toFixed(6));
                 $("#withoutmask-prediction").text(response.prediction.withoutMask.toFixed(6));
                 console.log(response);
